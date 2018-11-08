@@ -1,0 +1,5 @@
+(** @canonical Problem_9.Prelude *)
+module Prelude = Problem_9__Prelude
+
+(** @canonical Problem_9.Problem *)
+module Problem = Problem_9__Problem

@@ -1,0 +1,16 @@
+# jbuilder runtest
+# OCAMLPARAM: unset
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/s1/gdt6st415nzcc459hcz301yh0000gn/T/dunee05d09.output 2> /dev/null
+$ /Users/Spring/.opam/4.07.0/bin/ocamlc.opt -config > /var/folders/s1/gdt6st415nzcc459hcz301yh0000gn/T/duneaa93a0.output
+$ (cd _build/default && .ppx/jbuild/ppx_jane/ppx.exe --cookie 'library-name="problem_2"' -o problem_2.pp.ml --impl problem_2.ml --dump-ast)
+$ (cd _build/default && /Users/Spring/.opam/4.07.0/bin/ocamldep.opt -modules -impl problem_2.pp.ml) > _build/default/.problem_2.objs/problem_2.pp.ml.d
+$ (cd _build/default && /Users/Spring/.opam/4.07.0/bin/ocamlopt.opt -w -40 -g -I .problem_2.objs -I .problem_2.objs/.private -I /Users/Spring/.opam/4.07.0/lib/base -I /Users/Spring/.opam/4.07.0/lib/base/caml -I /Users/Spring/.opam/4.07.0/lib/base/md5 -I /Users/Spring/.opam/4.07.0/lib/base/shadow_stdlib -I /Users/Spring/.opam/4.07.0/lib/bin_prot -I /Users/Spring/.opam/4.07.0/lib/bin_prot/shape -I /Users/Spring/.opam/4.07.0/lib/fieldslib -I /Users/Spring/.opam/4.07.0/lib/ppx_assert/runtime-lib -I /Users/Spring/.opam/4.07.0/lib/ppx_bench/runtime-lib -I /Users/Spring/.opam/4.07.0/lib/ppx_compare/runtime-lib -I /Users/Spring/.opam/4.07.0/lib/ppx_expect/collector -I /Users/Spring/.opam/4.07.0/lib/ppx_expect/common -I /Users/Spring/.opam/4.07.0/lib/ppx_expect/config -I /Users/Spring/.opam/4.07.0/lib/ppx_hash/runtime-lib -I /Users/Spring/.opam/4.07.0/lib/ppx_inline_test/config -I /Users/Spring/.opam/4.07.0/lib/ppx_inline_test/runtime-lib -I /Users/Spring/.opam/4.07.0/lib/ppx_sexp_conv/runtime-lib -I /Users/Spring/.opam/4.07.0/lib/sexplib0 -I /Users/Spring/.opam/4.07.0/lib/stdio -I /Users/Spring/.opam/4.07.0/lib/typerep -I /Users/Spring/.opam/4.07.0/lib/variantslib -intf-suffix .ml -no-alias-deps -o .problem_2.objs/problem_2.cmx -c -impl problem_2.pp.ml)
+$ (cd _build/default && .problem_2.inline-tests/run.exe inline-test-runner problem_2 -source-tree-root . -diff-cmd -)
+> Hi ,My name is 
+> yang chunquan
+> and I am 5 years old
+> File "problem_2.ml", line 40, characters 0-71: Testing int_average... is false.
+>
+> FAILED 1 / 3 tests
+> Hi, My name is yang chunquan and I am 5 years old
+[2]

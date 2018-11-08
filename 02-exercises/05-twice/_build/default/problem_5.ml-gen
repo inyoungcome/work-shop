@@ -1,0 +1,2 @@
+(** @canonical Problem_5.Problem *)
+module Problem = Problem_5__Problem

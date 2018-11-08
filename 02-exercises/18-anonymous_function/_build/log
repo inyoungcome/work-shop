@@ -1,0 +1,4 @@
+# jbuilder runtest
+# OCAMLPARAM: unset
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/s1/gdt6st415nzcc459hcz301yh0000gn/T/dune21c12b.output 2> /dev/null
+$ /Users/Spring/.opam/4.07.0/bin/ocamlc.opt -config > /var/folders/s1/gdt6st415nzcc459hcz301yh0000gn/T/dunec76d8b.output
