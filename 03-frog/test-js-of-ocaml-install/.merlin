@@ -1,0 +1,18 @@
+B /Users/Spring/.opam/4.07.0/lib/base
+B /Users/Spring/.opam/4.07.0/lib/base/caml
+B /Users/Spring/.opam/4.07.0/lib/base/shadow_stdlib
+B /Users/Spring/.opam/4.07.0/lib/bytes
+B /Users/Spring/.opam/4.07.0/lib/js_of_ocaml
+B /Users/Spring/.opam/4.07.0/lib/sexplib0
+B /Users/Spring/.opam/4.07.0/lib/uchar
+B ../../_build/default/03-frogger/test-js-of-ocaml-install/.main.eobjs
+S /Users/Spring/.opam/4.07.0/lib/base
+S /Users/Spring/.opam/4.07.0/lib/base/caml
+S /Users/Spring/.opam/4.07.0/lib/base/shadow_stdlib
+S /Users/Spring/.opam/4.07.0/lib/bytes
+S /Users/Spring/.opam/4.07.0/lib/js_of_ocaml
+S /Users/Spring/.opam/4.07.0/lib/sexplib0
+S /Users/Spring/.opam/4.07.0/lib/uchar
+S .
+FLG -ppx '/Volumes/Spring/Repository/OCaml/workshop/03-frogger/learn-ocaml-workshop/_build/default/.ppx/jbuild/js_of_ocaml-ppx/ppx.exe --as-ppx'
+FLG -w -40
